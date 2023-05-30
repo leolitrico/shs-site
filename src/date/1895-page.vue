@@ -27,7 +27,7 @@
             <img src="../assets/icono_10.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
-              1891. Fête universitaire de mai 1891: Arrivée du cortège à la place Saint-François depuis l'avenue du Théâtre.
+              <b>1891.</b> Fête universitaire de mai 1891: Arrivée du cortège à la place Saint-François depuis l'avenue du Théâtre.
             </p>
           </v-card-text>
       </div> 
@@ -51,6 +51,10 @@
     padding: 10px;
   }
 
+  .v-card-text {
+    font-size: 20px;
+  }
+
 .img-container {
   display: flex;
   flex-direction: column;
@@ -61,10 +65,13 @@
 }
 
 .img-text {
-  display: flex;
   text-align: center;
-  text-wrap: wrap;
-  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
   
   </style>

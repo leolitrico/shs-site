@@ -14,7 +14,7 @@
               <img src="../assets/icono_4.jpg" alt="Image"/>
             <v-card-text class="img-text">
               <p>
-                1856. Vue des quais de la première gare.          
+                <b>1856.</b> Vue des quais de la première gare.          
               </p>
             </v-card-text>
         </div> 
@@ -34,7 +34,7 @@ La construction du réseau ferroviaire et son développement constant ont besoin
             <img src="../assets/icono_5.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
-              1859. Vue des quais de la première gare.          
+              <b>1859.</b> Vue des quais de la première gare.          
             </p>
           </v-card-text>
       </div>
@@ -48,17 +48,28 @@ La construction du réseau ferroviaire et son développement constant ont besoin
   margin: 20px 100px;
   padding: 10px;
 }
+
+.v-card-text {
+  font-size: 20px;
+}
+
 .img-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
 }
 
 .img-text {
-  text-align: center;
+text-align: center;
+font-size: 18px;
+}
+
+img {
+width: 100%;
+height: 100%;
 }
 
 </style>

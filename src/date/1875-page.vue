@@ -15,7 +15,7 @@
             <img src="../assets/icono_6.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
-              1873. Petit document, pour le touriste à Lausanne, comprenant à gauche un plan de Lausanne s'étendant du Tunnel à l'avenue de la Gare et de Marterey à Montbenon. Les édifices, rivières, reliefs et natures du terrain sont figurés. Les noms des rues sont indiqués. En haut, à gauche, et en bas, à droite, des lettres et des chiffres renvoient aux principaux hôtels et édifices publics de la ville, avec leurs coordonnées dans le plan. À droite, carte topographique de la partie sud de la ville de Lausanne, qui va de Saint-François à Ouchy et de Montolivet à Montriond. Les édifices, chemins, reliefs, limites des propriétés et voies de chemin de fer sont figurés.
+              <b>1873.</b> Petit document, pour le touriste à Lausanne, comprenant à gauche un plan de Lausanne s'étendant du Tunnel à l'avenue de la Gare et de Marterey à Montbenon. Les édifices, rivières, reliefs et natures du terrain sont figurés. Les noms des rues sont indiqués. En haut, à gauche, et en bas, à droite, des lettres et des chiffres renvoient aux principaux hôtels et édifices publics de la ville, avec leurs coordonnées dans le plan. À droite, carte topographique de la partie sud de la ville de Lausanne, qui va de Saint-François à Ouchy et de Montolivet à Montriond. Les édifices, chemins, reliefs, limites des propriétés et voies de chemin de fer sont figurés.
             </p>
           </v-card-text>
       </div> 
@@ -26,7 +26,7 @@
             <img src="../assets/icono_7.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
-              1876. Gare agrandie, vue depuis la place.           
+              <b>1876.</b> Gare agrandie, vue depuis la place.           
             </p>
           </v-card-text>
       </div> 
@@ -46,7 +46,7 @@
             <img src="../assets/icono_8.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
-              1870. Vue sur l'ancien établissement de bains Odot, situé à la place Pépinet 23.          
+              <b>1870.</b> Vue sur l'ancien établissement de bains Odot, situé à la place Pépinet 23.          
             </p>
           </v-card-text>
       </div> 
@@ -61,7 +61,11 @@
     margin: 20px 100px;
     padding: 10px;
   }
-  
+
+  .v-card-text {
+    font-size: 20px;
+  }
+
 .img-container {
   display: flex;
   flex-direction: column;
@@ -73,6 +77,12 @@
 
 .img-text {
   text-align: center;
+  font-size: 18px;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+}
+  
   </style>
-    

@@ -5,6 +5,8 @@ import Date1835 from './date/1835-page.vue'
 import Date1855 from './date/1855-page.vue'
 import Date1875 from './date/1875-page.vue'
 import Date1895 from './date/1895-page.vue'
+// eslint-disable-next-line 
+import Bibliography from './components/Bibliography.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 // Vuetify
@@ -26,6 +28,7 @@ const router = createRouter({
     { path: '/date/1855-page', component: Date1855 },
     { path: '/date/1875-page', component: Date1875 },
     { path: '/date/1895-page', component: Date1895 },
+    { path: '/bibliography', component: Bibliography}
   ],
 })
 

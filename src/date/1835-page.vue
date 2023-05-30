@@ -15,7 +15,7 @@
             <img src="../assets/icono_1.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
-              1831. vue de la route du Simplon avec un groupe de chalets à l'avant-plan et quelques personnages sur la route          
+              <b>1831.</b> vue de la route du Simplon avec un groupe de chalets à l'avant-plan et quelques personnages sur la route          
             </p>
           </v-card-text>
       </div> 
@@ -36,7 +36,7 @@ Se déplacer d’un pays comme l’Angleterre jusqu’en Europe et, plus particu
             <img src="../assets/icono_2.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
-              1836. “The pays de Vaud. From above Lausanne” (Anglais à Lausanne au XIXe siècle, catalogue d'exposition, MHL, juin-août 1978, p. 48, Borgeaud, p. 25).            
+              <b>1836.</b> “The pays de Vaud. From above Lausanne” (Anglais à Lausanne au XIXe siècle, catalogue d'exposition, MHL, juin-août 1978, p. 48, Borgeaud, p. 25).            
             </p>
           </v-card-text>
       </div> 
@@ -54,7 +54,7 @@ Se déplacer d’un pays comme l’Angleterre jusqu’en Europe et, plus particu
             <img src="../assets/icono_3.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
-              1839. Vue de l'hôtel Gibbon depuis le sud-ouest. Au premier plan le Petit-Chêne avec de nombreux passants. Devant l'hôtel, son très grand jardin ceint d'un haut mur et parcouru de sentiers, avec des fontaines et des kiosques. Derrière l'hôtel on aperçoit la Place St.-François, avec une voiture attelée. A gauche, on voit la tour du beffroi de la Cathédrale et à droite de l'hôtel la flèche de Saint-François. La vue s'étend à gauche sur le lac et les montagne.
+              <b>1839.</b> Vue de l'hôtel Gibbon depuis le sud-ouest. Au premier plan le Petit-Chêne avec de nombreux passants. Devant l'hôtel, son très grand jardin ceint d'un haut mur et parcouru de sentiers, avec des fontaines et des kiosques. Derrière l'hôtel on aperçoit la Place St.-François, avec une voiture attelée. A gauche, on voit la tour du beffroi de la Cathédrale et à droite de l'hôtel la flèche de Saint-François. La vue s'étend à gauche sur le lac et les montagne.
             </p>
           </v-card-text>
       </div> 
@@ -69,17 +69,27 @@ Se déplacer d’un pays comme l’Angleterre jusqu’en Europe et, plus particu
   padding: 10px;
 }
 
+.v-card-text {
+  font-size: 20px;
+}
+
 .img-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
 }
 
 .img-text {
-  text-align: center;
+text-align: center;
+font-size: 18px;
+}
+
+img {
+width: 100%;
+height: 100%;
 }
 
 </style>

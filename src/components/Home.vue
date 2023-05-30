@@ -143,6 +143,9 @@ export default {
 </script>
 
 <style scoped>
+.v-card-text {
+  font-size: 20px;
+}
 .toggles {
     position: absolute;
     bottom: 16px;
