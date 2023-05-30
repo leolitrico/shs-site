@@ -4,169 +4,202 @@
             "Prusse": {
                 "count": 3,
                 "latitude": 52.516667,
-                "longitude": 13.4
+                "longitude": 13.4,
+                "color": "#FFCCCC"
             },
             "Russie": {
                 "count": 2,
                 "latitude": 55.75,
-                "longitude": 37.616667
+                "longitude": 37.616667,
+                "color": "#FFCCCC"
             },
             "Italie": {
                 "count": 5,
                 "latitude": 41.9,
-                "longitude": 12.483333
+                "longitude": 12.483333,
+                "color": "#FFCCCC"
             },
             "France": {
                 "count": 54,
                 "latitude": 48.866667,
-                "longitude": 2.333333
+                "longitude": 2.333333,
+                "color": "#FF2400"
             },
             "Allemagne": {
                 "count": 45,
                 "latitude": 52.516667,
-                "longitude": 13.4
+                "longitude": 13.4,
+                "color": "#FF3300"
             },
             "Hollande": {
                 "count": 5,
                 "latitude": 52.35,
-                "longitude": 4.916667
+                "longitude": 4.916667,
+                "color": "#FFCCCC"
             },
             "Autriche": {
                 "count": 1,
                 "latitude": 48.2,
-                "longitude": 16.366667
+                "longitude": 16.366667,
+                "color": "#FFCCCC"
             },
             "Espagne": {
                 "count": 2,
                 "latitude": 40.4,
-                "longitude": -3.683333
+                "longitude": -3.683333,
+                "color": "#FFCCCC"
             },
             "Grèce": {
                 "count": 1,
                 "latitude": 37.983333,
-                "longitude": 23.733333
+                "longitude": 23.733333,
+                "color": "#FFCCCC"
             },
             "Angleterre": {
                 "count": 19,
                 "latitude": 51.5,
-                "longitude": -0.116667
+                "longitude": -0.116667,
+                "color": "#FF0000"
             },
             "Moldavie": {
                 "count": 4,
                 "latitude": 47,
-                "longitude": 28.85
+                "longitude": 28.85,
+                "color": "#FFCCCC"
             },
             "Inde": {
                 "count": 1,
                 "latitude": 28.6,
-                "longitude": 77.2
+                "longitude": 77.2,
+                "color": "#FFCCCC"
             }
         },
         "swiss": {
             "Saint-Gall": {
                 "count": 12,
                 "latitude": 47.423,
-                "longitude": 9.376
+                "longitude": 9.376,
+                "color": "#FF0000"
             },
             "Grisons": {
                 "count": 9,
                 "latitude": 46.849,
-                "longitude": 9.532
+                "longitude": 9.532,
+                "color": "#FF6666"
             },
             "Neuchâtel": {
                 "count": 19,
                 "latitude": 46.993,
-                "longitude": 6.929
+                "longitude": 6.929,
+                "color": "#FF0000"
             },
             "Thurgovie": {
                 "count": 14,
                 "latitude": 47.565,
-                "longitude": 9.109
+                "longitude": 9.109,
+                "color": "#FF0000"
             },
             "Zurich": {
                 "count": 39,
                 "latitude": 47.378,
-                "longitude": 8.539
+                "longitude": 8.539,
+                "color": "#FF3300"
             },
             "Schwytz": {
                 "count": 2,
                 "latitude": 47.023,
-                "longitude": 8.648
+                "longitude": 8.648,
+                "color": "#FFCCCC"
             },
             "Jura": {
                 "count": 7,
                 "latitude": 47.348,
-                "longitude": 7.155
+                "longitude": 7.155,
+                "color": "#FF6666"
             },
             "Fribourg": {
                 "count": 20,
                 "latitude": 46.806,
-                "longitude": 7.161
+                "longitude": 7.161,
+                "color": "#FF0000"
             },
             "Argovie": {
                 "count": 30,
                 "latitude": 47.392,
-                "longitude": 8.045
+                "longitude": 8.045,
+                "color": "#FF3300"
             },
             "Appenzell Rhodes-Intérieures": {
                 "count": 2,
                 "latitude": 47.316,
-                "longitude": 9.407
+                "longitude": 9.407,
+                "color": "#FFCCCC"
             },
             "Genève": {
                 "count": 49,
                 "latitude": 46.206,
-                "longitude": 6.142
+                "longitude": 6.142,
+                "color": "#FF3300"
             },
             "Berne": {
                 "count": 66,
                 "latitude": 46.948,
-                "longitude": 7.447
+                "longitude": 7.447,
+                "color": "#FF2400"
             },
             "Soleure": {
                 "count": 7,
                 "latitude": 47.206,
-                "longitude": 7.537
+                "longitude": 7.537,
+                "color": "#FF6666"
             },
             "Valais": {
                 "count": 8,
                 "latitude": 46.304,
-                "longitude": 7.345
+                "longitude": 7.345,
+                "color": "#FF6666"
             },
             "Lucerne": {
                 "count": 5,
                 "latitude": 47.051,
-                "longitude": 8.305
+                "longitude": 8.305,
+                "color": "#FFCCCC"
             },
             "Tessin": {
                 "count": 5,
                 "latitude": 46.021,
-                "longitude": 8.955
+                "longitude": 8.955,
+                "color": "#FFCCCC"
             },
             "Schaffhouse": {
                 "count": 3,
                 "latitude": 47.696,
-                "longitude": 8.634
+                "longitude": 8.634,
+                "color": "#FFCCCC"
             },
             "Glaris": {
                 "count": 5,
                 "latitude": 47.041,
-                "longitude": 9.067
+                "longitude": 9.067,
+                "color": "#FFCCCC"
             },
             "Zoug": {
                 "count": 2,
                 "latitude": 47.173,
-                "longitude": 8.515
+                "longitude": 8.515,
+                "color": "#FFCCCC"
             },
             "Appenzell Rhodes-Extérieures": {
                 "count": 2,
                 "latitude": 47.386,
-                "longitude": 9.294
+                "longitude": 9.294,
+                "color": "#FFCCCC"
             },
             "Bâle": {
                 "count": 15,
                 "latitude": 47.559,
-                "longitude": 7.588
+                "longitude": 7.588,
+                "color": "#FF0000"
             }
         }
     },
@@ -175,194 +208,232 @@
             "Suède": {
                 "count": 2,
                 "latitude": 59.32932349999999,
-                "longitude": 18.068580800000063
+                "longitude": 18.068580800000063,
+                "color": "#FFCCCC"
             },
             "Angleterre": {
                 "count": 33,
                 "latitude": 51.5073509,
-                "longitude": -0.12775829999998223
+                "longitude": -0.12775829999998223,
+                "color": "#FF3300"
             },
             "Jamaïque": {
                 "count": 1,
                 "latitude": 18.109581,
-                "longitude": -77.29750800000002
+                "longitude": -77.29750800000002,
+                "color": "#FFCCCC"
             },
             "Canada": {
                 "count": 1,
                 "latitude": 56.130366,
-                "longitude": -106.346771
+                "longitude": -106.346771,
+                "color": "#FFCCCC"
             },
             "Roumanie": {
                 "count": 2,
                 "latitude": 45.943161,
-                "longitude": 24.96676099999998
+                "longitude": 24.96676099999998,
+                "color": "#FFCCCC"
             },
             "Prusse": {
                 "count": 5,
                 "latitude": 52.52000659999999,
-                "longitude": 13.404953999999975
+                "longitude": 13.404953999999975,
+                "color": "#FFCCCC"
             },
             "Russie": {
                 "count": 1,
                 "latitude": 61.52401,
-                "longitude": 105.31875600000001
+                "longitude": 105.31875600000001,
+                "color": "#FFCCCC"
             },
             "Autriche": {
                 "count": 1,
                 "latitude": 47.516231,
-                "longitude": 14.550072
+                "longitude": 14.550072,
+                "color": "#FFCCCC"
             },
             "Hollande": {
                 "count": 4,
                 "latitude": 52.132633,
-                "longitude": 5.2912659999999505
+                "longitude": 5.2912659999999505,
+                "color": "#FFCCCC"
             },
             "Belgique": {
                 "count": 1,
                 "latitude": 50.503887,
-                "longitude": 4.469936
+                "longitude": 4.469936,
+                "color": "#FFCCCC"
             },
             "France": {
                 "count": 54,
                 "latitude": 48.866667,
-                "longitude": 2.333333
+                "longitude": 2.333333,
+                "color": "#FF2400"
             },
             "Allemagne": {
                 "count": 54,
                 "latitude": 51.165691,
-                "longitude": 10.451526000000058
+                "longitude": 10.451526000000058,
+                "color": "#FF2400"
             },
             "Ecosse": {
                 "count": 2,
                 "latitude": 56.49067119999999,
-                "longitude": -4.20264580000004
+                "longitude": -4.20264580000004,
+                "color": "#FFCCCC"
             },
             "Italie": {
                 "count": 4,
                 "latitude": 41.87194,
-                "longitude": 12.567379999999957
+                "longitude": 12.567379999999957,
+                "color": "#FFCCCC"
             },
             "Luxembourg": {
                 "count": 1,
                 "latitude": 49.815273,
-                "longitude": 6.129583000000025
+                "longitude": 6.129583000000025,
+                "color": "#FFCCCC"
             },
             "Moldavie": {
                 "count": 5,
                 "latitude": 47.411631,
-                "longitude": 28.369885000000038
+                "longitude": 28.36988500000004,
+                "color": "#FFCCCC"
             },
             "Argentine": {
                 "count": 1,
                 "latitude": -38.416097,
-                "longitude": -63.616671999999994
+                "longitude": -63.616671999999994,
+                "color": "#FFCCCC"
             },
             "Indonésie": {
                 "count": 1,
                 "latitude": -0.789275,
-                "longitude": 113.92132700000002
+                "longitude": 113.92132700000002,
+                "color": "#FFCCCC"
             }
         },
         "swiss": {
             "Grisons": {
                 "count": 8,
                 "latitude": 46.656,
-                "longitude": 9.578
+                "longitude": 9.578,
+                "color": "#FF6666"
             },
             "Valais": {
                 "count": 9,
                 "latitude": 46.191,
-                "longitude": 7.499
+                "longitude": 7.499,
+                "color": "#FF6666"
             },
             "Genève": {
                 "count": 113,
                 "latitude": 46.205,
-                "longitude": 6.144
+                "longitude": 6.144,
+                "color": "#FF2400"
             },
             "Berne": {
                 "count": 75,
                 "latitude": 46.948,
-                "longitude": 7.447
+                "longitude": 7.447,
+                "color": "#FF2400"
             },
             "Saint-Gall": {
                 "count": 12,
                 "latitude": 47.423,
-                "longitude": 9.376
+                "longitude": 9.376,
+                "color": "#FF0000"
             },
             "Tessin": {
                 "count": 2,
                 "latitude": 46.021,
-                "longitude": 8.955
+                "longitude": 8.955,
+                "color": "#FFCCCC"
             },
             "Lucerne": {
                 "count": 17,
                 "latitude": 47.051,
-                "longitude": 8.307
+                "longitude": 8.307,
+                "color": "#FF0000"
             },
             "Appenzell Rhodes-Extérieures": {
                 "count": 2,
                 "latitude": 47.385,
-                "longitude": 9.292
+                "longitude": 9.292,
+                "color": "#FFCCCC"
             },
             "Zurich": {
                 "count": 59,
                 "latitude": 47.377,
-                "longitude": 8.539
+                "longitude": 8.539,
+                "color": "#FF2400"
             },
             "Thurgovie": {
                 "count": 11,
                 "latitude": 47.564,
-                "longitude": 9.044
+                "longitude": 9.044,
+                "color": "#FF0000"
             },
             "Bâle": {
                 "count": 23,
                 "latitude": 47.559,
-                "longitude": 7.588
+                "longitude": 7.588,
+                "color": "#FF3300"
             },
             "Neuchâtel": {
                 "count": 13,
                 "latitude": 46.993,
-                "longitude": 6.929
+                "longitude": 6.929,
+                "color": "#FF0000"
             },
             "Jura": {
                 "count": 1,
                 "latitude": 47.348,
-                "longitude": 7.155
+                "longitude": 7.155,
+                "color": "#FFCCCC"
             },
             "Soleure": {
                 "count": 10,
                 "latitude": 47.206,
-                "longitude": 7.537
+                "longitude": 7.537,
+                "color": "#FF6666"
             },
             "Schaffhouse": {
                 "count": 5,
                 "latitude": 47.697,
-                "longitude": 8.634
+                "longitude": 8.634,
+                "color": "#FFCCCC"
             },
             "Glaris": {
                 "count": 5,
                 "latitude": 47.041,
-                "longitude": 9.067
+                "longitude": 9.067,
+                "color": "#FFCCCC"
             },
             "Argovie": {
                 "count": 34,
                 "latitude": 47.387,
-                "longitude": 8.051
+                "longitude": 8.051,
+                "color": "#FF3300"
             },
             "Schwytz": {
                 "count": 3,
                 "latitude": 47.023,
-                "longitude": 8.648
+                "longitude": 8.648,
+                "color": "#FFCCCC"
             },
             "Appenzell Rhodes-Intérieures": {
                 "count": 4,
                 "latitude": 47.316,
-                "longitude": 9.407
+                "longitude": 9.407,
+                "color": "#FFCCCC"
             },
             "Fribourg": {
                 "count": 30,
                 "latitude": 46.802,
-                "longitude": 7.151
+                "longitude": 7.151,
+                "color": "#FF3300"
             }
         }
     },
@@ -371,229 +442,274 @@
             "Espagne": {
                 "count": 4,
                 "latitude": 40.416775,
-                "longitude": -3.70379
+                "longitude": -3.70379,
+                "color": "#FFCCCC"
             },
             "Angleterre": {
                 "count": 82,
                 "latitude": 51.507351,
-                "longitude": -0.127758
+                "longitude": -0.127758,
+                "color": "#FF2400"
             },
             "Danemark": {
                 "count": 6,
                 "latitude": 55.676097,
-                "longitude": 12.568337
+                "longitude": 12.568337,
+                "color": "#FF6666"
             },
             "Russie": {
                 "count": 22,
                 "latitude": 55.755826,
-                "longitude": 37.6173
+                "longitude": 37.6173,
+                "color": "#FF3300"
             },
             "Prusse": {
                 "count": 20,
                 "latitude": 52.520007,
-                "longitude": 13.404954
+                "longitude": 13.404954,
+                "color": "#FF0000"
             },
             "Allemagne": {
                 "count": 91,
                 "latitude": 52.520007,
-                "longitude": 13.404954
+                "longitude": 13.404954,
+                "color": "#FF2400"
             },
             "Italie": {
                 "count": 35,
                 "latitude": 41.902783,
-                "longitude": 12.496366
+                "longitude": 12.496366,
+                "color": "#FF3300"
             },
             "Hollande": {
                 "count": 8,
                 "latitude": 52.370216,
-                "longitude": 4.895168
+                "longitude": 4.895168,
+                "color": "#FF6666"
             },
             "Turquie": {
                 "count": 1,
                 "latitude": 41.008238,
-                "longitude": 28.978359
+                "longitude": 28.978359,
+                "color": "#FFCCCC"
             },
             "Amérique": {
                 "count": 17,
                 "latitude": 37.09024,
-                "longitude": -95.712891
+                "longitude": -95.712891,
+                "color": "#FF0000"
             },
             "France": {
                 "count": 111,
                 "latitude": 48.866667,
-                "longitude": 2.333333
+                "longitude": 2.333333,
+                "color": "#FF2400"
             },
             "Autriche": {
                 "count": 4,
                 "latitude": 47.516231,
-                "longitude": 14.550072
+                "longitude": 14.550072,
+                "color": "#FFCCCC"
             },
             "Roumanie": {
                 "count": 5,
                 "latitude": 45.943161,
-                "longitude": 24.96676
+                "longitude": 24.96676,
+                "color": "#FFCCCC"
             },
             "Algérie": {
                 "count": 1,
                 "latitude": 28.033886,
-                "longitude": 1.659626
+                "longitude": 1.659626,
+                "color": "#FFCCCC"
             },
             "Suède": {
                 "count": 8,
                 "latitude": 60.128161,
-                "longitude": 18.643501
+                "longitude": 18.643501,
+                "color": "#FF6666"
             },
             "Japon": {
                 "count": 3,
                 "latitude": 36.204824,
-                "longitude": 138.252924
+                "longitude": 138.252924,
+                "color": "#FFCCCC"
             },
             "Bolivie": {
                 "count": 1,
                 "latitude": -16.290154,
-                "longitude": -63.588653
+                "longitude": -63.588653,
+                "color": "#FFCCCC"
             },
             "Argentine": {
                 "count": 1,
                 "latitude": -38.416097,
-                "longitude": -63.616672
+                "longitude": -63.616672,
+                "color": "#FFCCCC"
             },
             "Egypte": {
                 "count": 1,
                 "latitude": 26.820553,
-                "longitude": 30.802498
+                "longitude": 30.802498,
+                "color": "#FFCCCC"
             },
             "Pologne": {
                 "count": 2,
                 "latitude": 51.919438,
-                "longitude": 19.145136
+                "longitude": 19.145136,
+                "color": "#FFCCCC"
             },
             "Ecosse": {
                 "count": 3,
                 "latitude": 56.490671,
-                "longitude": -4.202646
+                "longitude": -4.202646,
+                "color": "#FFCCCC"
             },
             "Arménie": {
                 "count": 1,
                 "latitude": 40.069099,
-                "longitude": 45.038189
+                "longitude": 45.038189,
+                "color": "#FFCCCC"
             }
         },
         "swiss": {
             "Valais": {
                 "count": 9,
                 "latitude": 46.487,
-                "longitude": 8.264
+                "longitude": 8.264,
+                "color": "#FF6666"
             },
             "Fribourg": {
                 "count": 37,
                 "latitude": 46.802,
-                "longitude": 7.151
+                "longitude": 7.151,
+                "color": "#FF3300"
             },
             "Berne": {
                 "count": 34,
                 "latitude": 46.948,
-                "longitude": 7.447
+                "longitude": 7.447,
+                "color": "#FF3300"
             },
             "Tessin": {
                 "count": 11,
                 "latitude": 46.021,
-                "longitude": 8.96
+                "longitude": 8.96,
+                "color": "#FF0000"
             },
             "Lucerne": {
                 "count": 18,
                 "latitude": 47.051,
-                "longitude": 8.305
+                "longitude": 8.305,
+                "color": "#FF0000"
             },
             "Schaffhouse": {
                 "count": 8,
                 "latitude": 47.696,
-                "longitude": 8.634
+                "longitude": 8.634,
+                "color": "#FF6666"
             },
             "Bâle": {
                 "count": 19,
                 "latitude": 47.559,
-                "longitude": 7.588
+                "longitude": 7.588,
+                "color": "#FF0000"
             },
             "Grisons": {
                 "count": 23,
                 "latitude": 46.703,
-                "longitude": 9.608
+                "longitude": 9.608,
+                "color": "#FF3300"
             },
             "Uri": {
                 "count": 2,
                 "latitude": 46.885,
-                "longitude": 8.635
+                "longitude": 8.635,
+                "color": "#FFCCCC"
             },
             "Argovie": {
                 "count": 46,
                 "latitude": 47.387,
-                "longitude": 8.051
+                "longitude": 8.051,
+                "color": "#FF3300"
             },
             "Jura": {
                 "count": 11,
                 "latitude": 47.348,
-                "longitude": 7.143
+                "longitude": 7.143,
+                "color": "#FF0000"
             },
             "Soleure": {
                 "count": 10,
                 "latitude": 47.208,
-                "longitude": 7.537
+                "longitude": 7.537,
+                "color": "#FF6666"
             },
             "Zurich": {
                 "count": 52,
                 "latitude": 47.378,
-                "longitude": 8.539
+                "longitude": 8.539,
+                "color": "#FF2400"
             },
             "Saint-Gall": {
                 "count": 19,
                 "latitude": 47.423,
-                "longitude": 9.376
+                "longitude": 9.376,
+                "color": "#FF0000"
             },
             "Neuchâtel": {
                 "count": 23,
                 "latitude": 46.993,
-                "longitude": 6.929
+                "longitude": 6.929,
+                "color": "#FF3300"
             },
             "Genève": {
                 "count": 233,
                 "latitude": 46.204,
-                "longitude": 6.144
+                "longitude": 6.144,
+                "color": "#FF2400"
             },
             "Thurgovie": {
                 "count": 21,
                 "latitude": 47.593,
-                "longitude": 9.044
+                "longitude": 9.044,
+                "color": "#FF3300"
             },
             "Schwytz": {
                 "count": 2,
                 "latitude": 47.017,
-                "longitude": 8.654
+                "longitude": 8.654,
+                "color": "#FFCCCC"
             },
             "Glaris": {
                 "count": 15,
                 "latitude": 47.041,
-                "longitude": 9.066
+                "longitude": 9.066,
+                "color": "#FF0000"
             },
             "Appenzell Rhodes-Extérieures": {
                 "count": 2,
                 "latitude": 47.385,
-                "longitude": 9.292
+                "longitude": 9.292,
+                "color": "#FFCCCC"
             },
             "Appenzell Rhodes-Intérieures": {
                 "count": 7,
                 "latitude": 47.316,
-                "longitude": 9.407
+                "longitude": 9.407,
+                "color": "#FF6666"
             },
             "Zoug": {
                 "count": 1,
                 "latitude": 47.173,
-                "longitude": 8.515
+                "longitude": 8.515,
+                "color": "#FFCCCC"
             },
             "Unterwald": {
                 "count": 1,
                 "latitude": 46.897,
-                "longitude": 8.251
+                "longitude": 8.251,
+                "color": "#FFCCCC"
             }
         }
     },
@@ -602,214 +718,256 @@
             "Angleterre": {
                 "count": 92,
                 "latitude": 51.5073509,
-                "longitude": -0.1277583
+                "longitude": -0.1277583,
+                "color": "#FF2400"
             },
             "Autriche": {
                 "count": 15,
                 "latitude": 47.516231,
-                "longitude": 14.550072
+                "longitude": 14.550072,
+                "color": "#FF0000"
             },
             "Allemagne": {
                 "count": 162,
                 "latitude": 51.165691,
-                "longitude": 10.451526
+                "longitude": 10.451526,
+                "color": "#FF2400"
             },
             "Belgique": {
                 "count": 3,
                 "latitude": 50.503887,
-                "longitude": 4.469936
+                "longitude": 4.469936,
+                "color": "#FFCCCC"
             },
             "Bulgarie": {
                 "count": 13,
                 "latitude": 42.733883,
-                "longitude": 25.48583
+                "longitude": 25.48583,
+                "color": "#FF0000"
             },
             "Danemark": {
                 "count": 1,
                 "latitude": 56.26392,
-                "longitude": 9.501785
+                "longitude": 9.501785,
+                "color": "#FFCCCC"
             },
             "Espagne": {
                 "count": 1,
                 "latitude": 40.463667,
-                "longitude": -3.74922
+                "longitude": -3.74922,
+                "color": "#FFCCCC"
             },
             "France": {
                 "count": 92,
                 "latitude": 48.866667,
-                "longitude": 2.333333
+                "longitude": 2.333333,
+                "color": "#FF2400"
             },
             "Grèce": {
                 "count": 1,
                 "latitude": 39.074208,
-                "longitude": 21.824312
+                "longitude": 21.824312,
+                "color": "#FFCCCC"
             },
             "Hollande": {
                 "count": 18,
                 "latitude": 52.132633,
-                "longitude": 5.291266
+                "longitude": 5.291266,
+                "color": "#FF0000"
             },
             "Italie": {
                 "count": 40,
                 "latitude": 41.87194,
-                "longitude": 12.56738
+                "longitude": 12.56738,
+                "color": "#FF3300"
             },
             "Maroc": {
                 "count": 1,
                 "latitude": 31.791702,
-                "longitude": -7.09262
+                "longitude": -7.09262,
+                "color": "#FFCCCC"
             },
             "Mali": {
                 "count": 1,
                 "latitude": 17.570692,
-                "longitude": -3.996166
+                "longitude": -3.996166,
+                "color": "#FFCCCC"
             },
             "Pologne": {
                 "count": 2,
                 "latitude": 51.919438,
-                "longitude": 19.145136
+                "longitude": 19.145136,
+                "color": "#FFCCCC"
             },
             "Prusse": {
                 "count": 17,
                 "latitude": 52.520007,
-                "longitude": 13.404954
+                "longitude": 13.404954,
+                "color": "#FF0000"
             },
             "Roumanie": {
                 "count": 6,
                 "latitude": 45.943161,
-                "longitude": 24.96676
+                "longitude": 24.96676,
+                "color": "#FF6666"
             },
             "Russie": {
                 "count": 28,
                 "latitude": 61.52401,
-                "longitude": 105.318756
+                "longitude": 105.318756,
+                "color": "#FF3300"
             },
             "Suède": {
                 "count": 8,
                 "latitude": 60.128161,
-                "longitude": 18.643501
+                "longitude": 18.643501,
+                "color": "#FF6666"
             },
             "Australie": {
                 "count": 2,
                 "latitude": -25.274398,
-                "longitude": 133.775136
+                "longitude": 133.775136,
+                "color": "#FFCCCC"
             },
             "Amérique": {
                 "count": 30,
                 "latitude": 37.09024,
-                "longitude": -95.712891
+                "longitude": -95.712891,
+                "color": "#FF3300"
             },
             "Ecosse": {
                 "count": 2,
                 "latitude": 56.490671,
-                "longitude": -4.202646
+                "longitude": -4.202646,
+                "color": "#FFCCCC"
             }
         },
         "swiss": {
             "Saint-Gall": {
                 "count": 22,
                 "latitude": 47.423225,
-                "longitude": 9.376857
+                "longitude": 9.376857,
+                "color": "#FF3300"
             },
             "Berne": {
                 "count": 27,
                 "latitude": 46.94809,
-                "longitude": 7.44744
+                "longitude": 7.44744,
+                "color": "#FF3300"
             },
             "Fribourg": {
                 "count": 87,
                 "latitude": 46.8025,
-                "longitude": 7.151389
+                "longitude": 7.151389,
+                "color": "#FF2400"
             },
             "Argovie": {
                 "count": 53,
                 "latitude": 47.3925,
-                "longitude": 8.044722
+                "longitude": 8.044722,
+                "color": "#FF2400"
             },
             "Grisons": {
                 "count": 44,
                 "latitude": 46.849722,
-                "longitude": 9.532778
+                "longitude": 9.532778,
+                "color": "#FF3300"
             },
             "Neuchâtel": {
                 "count": 39,
                 "latitude": 46.993611,
-                "longitude": 6.931944
+                "longitude": 6.931944,
+                "color": "#FF3300"
             },
             "Tessin": {
                 "count": 8,
                 "latitude": 46.016667,
-                "longitude": 8.966667
+                "longitude": 8.966667,
+                "color": "#FF6666"
             },
             "Bâle": {
                 "count": 33,
                 "latitude": 47.559,
-                "longitude": 7.588
+                "longitude": 7.588,
+                "color": "#FF3300"
             },
             "Valais": {
                 "count": 16,
                 "latitude": 46.291389,
-                "longitude": 7.538889
+                "longitude": 7.538889,
+                "color": "#FF0000"
             },
             "Genève": {
                 "count": 285,
                 "latitude": 46.195278,
-                "longitude": 6.148889
+                "longitude": 6.148889,
+                "color": "#FF2400"
             },
             "Schaffhouse": {
                 "count": 8,
                 "latitude": 47.696944,
-                "longitude": 8.634167
+                "longitude": 8.634167,
+                "color": "#FF6666"
             },
             "Lucerne": {
                 "count": 27,
                 "latitude": 47.050278,
-                "longitude": 8.306389
+                "longitude": 8.306389,
+                "color": "#FF3300"
             },
             "Thurgovie": {
                 "count": 33,
                 "latitude": 47.566667,
-                "longitude": 9.166667
+                "longitude": 9.166667,
+                "color": "#FF3300"
             },
             "Jura": {
                 "count": 12,
                 "latitude": 47.366667,
-                "longitude": 7.35
+                "longitude": 7.35,
+                "color": "#FF0000"
             },
             "Uri": {
                 "count": 1,
                 "latitude": 46.883333,
-                "longitude": 8.633333
+                "longitude": 8.633333,
+                "color": "#FFCCCC"
             },
             "Zoug": {
                 "count": 2,
                 "latitude": 47.166667,
-                "longitude": 8.516667
+                "longitude": 8.516667,
+                "color": "#FFCCCC"
             },
             "Zurich": {
                 "count": 65,
                 "latitude": 47.366667,
-                "longitude": 8.55
+                "longitude": 8.55,
+                "color": "#FF2400"
             },
             "Soleure": {
                 "count": 15,
                 "latitude": 47.206944,
-                "longitude": 7.537222
+                "longitude": 7.537222,
+                "color": "#FF0000"
             },
             "Appenzell Rhodes-Intérieures": {
                 "count": 8,
                 "latitude": 47.316667,
-                "longitude": 9.416667
+                "longitude": 9.416667,
+                "color": "#FF6666"
             },
             "Glaris": {
                 "count": 6,
                 "latitude": 47.033333,
-                "longitude": 9.066667
+                "longitude": 9.066667,
+                "color": "#FF6666"
             },
             "Schwytz": {
                 "count": 3,
                 "latitude": 47.016667,
-                "longitude": 8.65
+                "longitude": 8.65,
+                "color": "#FFCCCC"
             }
         }
     }
