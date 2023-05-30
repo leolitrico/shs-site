@@ -1,6 +1,16 @@
 <template>
   <v-app>
-    <v-container>
+    <v-app-bar app color="brown" dark>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-toolbar-title>My Website</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn text to="/">Home</v-btn>
+      <v-btn text to="/date/1835-page">1835</v-btn>
+      <v-btn text to="/date/1855-page">1855</v-btn>
+      <v-btn text to="/date/1875-page">1875</v-btn>
+      <v-btn text to="/date/1895-page">1895</v-btn>
+    </v-app-bar>
+    <v-container class="pt-10">
       <v-card class="elevation-5">
         <v-card-title class="headline font-weight-bold">Intro</v-card-title>
         <v-card-text>
@@ -94,7 +104,8 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
+.pt-20 {
+  padding-top: 20px;
+}
 </style>
-
-
-
