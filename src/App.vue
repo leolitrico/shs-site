@@ -13,18 +13,21 @@
       <v-card class="elevation-5" style="display: flex; height: 800px; flex-direction: column;">
         <v-card-title class="headline font-weight-bold">Carte</v-card-title>
         <div style="flex: 1">
-          <l-map ref="map" style="height: 100%; width: 100%" :zoom="zoom" :center="center">
-          <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
-          <l-circle-marker :lat-lng="circle.center" :radius="circle.radius" :color="circle.color"></l-circle-marker>
-        </l-map>
+          <l-map ref="map" @update:zoom="updateZoom(zoom)" style="height: 100%; width: 100%" :zoom="zoom" :max-zoom="8" :min-zoom="3" :center="swissCenter">
+            <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
+            <l-circle-marker v-for="(region, index) in dates[selectedDate].data['foreign']" :key="index" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"></l-circle-marker>
+            <div v-if="showSwiss" :key="'swiss'">
+              <l-circle-marker v-for="(region, index) in dates[selectedDate].data['swiss']" :key="index + 'swiss'" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"></l-circle-marker>
+            </div>
+          </l-map>
         </div>
       </v-card>
     </v-container>
     <v-container class="horizontal-bar">
-        <v-col v-for="(link, index) in links" :key="index" class="align-center flex-grow-1">
+        <v-col v-for="(date, index) in dates" :key="index" class="align-center flex-grow-1">
           <div class="button-container">
-            <v-btn :to="link.url" class="text-center" rounded>
-            {{ link.title }}
+            <v-btn class="text-center" rounded>
+            {{ date.title }}
           </v-btn>
           </div>
         </v-col>
@@ -35,43 +38,41 @@
 <script>
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LCircleMarker } from "@vue-leaflet/vue-leaflet";
+import data from "./data/data.json"
 
 export default {
   components: {
     LMap,
     LTileLayer,
-    LCircleMarker
+    LCircleMarker,
   },
   data() {
     return {
-      circle: {
-        center: [ 49.1193089, 6.1757156 ],
-        radius: 100,
-        color: 'red',
-      },
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      center: [ 49.1193089, 6.1757156 ],
-      zoom: 12,
-      links: [
-        {
-          title: "1835",
-          url: "/date/1835-page"
-        },
-        {
-          title: "1855",
-          url: "/date/1855-page"
-        },
-        {
-          title: "1875",
-          url: "/date/1875-page"
-        },
-        {
-          title: "1895",
-          url: "/date/1895-page"
-        }
-      ],
+      swissCenter: [46.8182, 8.2275],
+      dates: {
+        1835 : {title: "1835", data: data["1835"]}, 
+        1855 : {title: "1855", data: data["1855"]}, 
+        1875 : {title: "1875", data: data["1875"]}, 
+        1895 : {title: "1895", data: data["1895"]}
+      },
+      selectedDate: "1835",
+      showSwiss: false,
+      zoom: 4,
     };
-  }
+  },
+  methods: {
+    changeDate(date) {
+      this.selectedDate = date;
+    },
+    getRadius(count) {
+      return Math.sqrt(count / 20) * this.zoom * 10;
+    },
+    updateZoom(zoom) {
+      this.zoom = zoom;
+      this.showSwiss = zoom > 6;
+    }
+  },
 };
 </script>
 
