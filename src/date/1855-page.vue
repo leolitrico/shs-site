@@ -9,16 +9,16 @@
             Dans les recensements de 1855 nous constatons une augmentation générale du tourisme étranger. En parallèle, la ville connaît également une augmentation de l’immigration italienne remarquable : elle voit son arrivée notamment pour des métiers de massiers ou de manœuvre, ou encore pour devenir maçon. En 1856, après  la gare de Lausanne voit le jour.          </p>
         </v-card-text>
       </v-card>
-      <div class="img-container">
-          <v-card>
-            <img src="../assets/icono_4.jpg" alt="Image"/>
-          <v-card-text class="img-text">
-            <p>
-              1856. Vue des quais de la première gare.          
-            </p>
-          </v-card-text>
-          </v-card>
-      </div> 
+      <v-card>
+        <div class="img-container">
+              <img src="../assets/icono_4.jpg" alt="Image"/>
+            <v-card-text class="img-text">
+              <p>
+                1856. Vue des quais de la première gare.          
+              </p>
+            </v-card-text>
+        </div> 
+      </v-card>
       <v-card class="elevation-5">
         <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
         <v-card-text>
@@ -28,16 +28,17 @@ La construction du réseau ferroviaire et son développement constant ont besoin
           </p>
         </v-card-text>
       </v-card>
+      <v-card>
+
       <div class="img-container">
-          <v-card>
             <img src="../assets/icono_5.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
               1859. Vue des quais de la première gare.          
             </p>
           </v-card-text>
-          </v-card>
       </div>
+    </v-card>
     </v-col>
   </v-main>
 </template>
