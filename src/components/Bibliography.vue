@@ -6,7 +6,7 @@
             <v-list dense>
                 <v-list-item v-for="(entry, index) in bibliography" :key="index">
                     <v-list-item-content>
-                        <v-list-item-title>{{ entry }}</v-list-item-title>
+                        <v-list-item-text>{{ entry }}</v-list-item-text>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>
@@ -40,5 +40,9 @@
   .v-card {
     margin: 20px 100px;
     padding: 10px;
+  }
+
+  .v-list-item {
+    margin: 15px 0;
   }
   </style>
