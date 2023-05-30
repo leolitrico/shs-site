@@ -3,10 +3,10 @@
     <v-container>
       <v-card class="elevation-5">
         <v-card-title class="headline font-weight-bold">Intro</v-card-title>
-          <v-card-text>
-            <p>Lausanne est une belle ville</p>
-            <p>super belle</p>
-          </v-card-text>
+        <v-card-text>
+          <p>Lausanne est une belle ville</p>
+          <p>super belle</p>
+        </v-card-text>
       </v-card>
     </v-container>
     <v-container>
@@ -14,43 +14,48 @@
         <v-card-title class="headline font-weight-bold">Carte</v-card-title>
         <div style="flex: 1">
           <l-map ref="map" style="height: 100%; width: 100%" :zoom="zoom" :center="center">
-          <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
-          <l-circle-marker :lat-lng="circle.center" :radius="circle.radius" :color="circle.color"></l-circle-marker>
-        </l-map>
+            <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
+            <l-circle-marker :lat-lng="circle.center" :radius="circle.radius" :color="circle.color"></l-circle-marker>
+          </l-map>
         </div>
       </v-card>
     </v-container>
     <v-container class="horizontal-bar">
-        <v-col v-for="(link, index) in links" :key="index" class="align-center flex-grow-1">
-          <div class="button-container">
-            <v-btn :to="link.url" class="text-center" rounded>
+      <v-col v-for="(link, index) in links" :key="index" class="align-center flex-grow-1">
+        <div class="button-container">
+          <v-btn :to="link.url" class="text-center" rounded>
             {{ link.title }}
           </v-btn>
-          </div>
-        </v-col>
+        </div>
+      </v-col>
     </v-container>
+
+    <evolution></evolution>
+
   </v-app>
 </template>
 
 <script>
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LCircleMarker } from "@vue-leaflet/vue-leaflet";
+import Evolution from './Evolution.vue';
 
 export default {
   components: {
     LMap,
     LTileLayer,
-    LCircleMarker
+    LCircleMarker,
+    Evolution
   },
   data() {
     return {
       circle: {
-        center: [ 49.1193089, 6.1757156 ],
+        center: [49.1193089, 6.1757156],
         radius: 100,
         color: 'red',
       },
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      center: [ 49.1193089, 6.1757156 ],
+      center: [49.1193089, 6.1757156],
       zoom: 12,
       links: [
         {
