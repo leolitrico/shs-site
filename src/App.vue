@@ -21,72 +21,91 @@
     </v-container>
     <v-container>
       <v-card class="elevation-5" style="display: flex; height: 800px; flex-direction: column;">
-        <v-card-title class="headline font-weight-bold">Carte</v-card-title>
-        <div style="flex: 1">
-          <l-map ref="map" style="height: 100%; width: 100%" :zoom="zoom" :center="center">
+        <v-card-title class="headline font-weight-bold">Carte des origines des pensionnaires pour chaque année</v-card-title>
+        <div style="flex: 1; position: relative;">
+          <l-map ref="map" @update:zoom="updateZoom" style="height: 100%; width: 100%" :zoom="zoom" :max-zoom="9" :min-zoom="3" :center="center">
             <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
-            <l-circle-marker :lat-lng="circle.center" :radius="circle.radius" :color="circle.color"></l-circle-marker>
+            <l-circle-marker v-for="(region, key) in dates[selectedDate].data['foreign']" :key="key" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)" @click="showRegionInfo(key)"></l-circle-marker>
+            <div v-if="showSwiss" :key="'swiss'">
+              <l-circle-marker v-for="(region, key) in dates[selectedDate].data['swiss']" :key="key + 'swiss'" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)" @click="showRegionInfo(key)"></l-circle-marker>
+            </div>
           </l-map>
+          <v-btn class="map-toggle" @click="toggleSwiss">{{ showSwiss ? 'International' : 'Suisse' }}</v-btn>
+          <v-card class="dates-card">
+            <v-list>
+              <v-list-item v-for="(date, index) in dates" :key="index" @click="changeDate(date.title)">
+                <v-list-item-title>{{ date.title }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-card>
         </div>
       </v-card>
-    </v-container>
-    <v-container class="horizontal-bar">
-      <v-col v-for="(link, index) in links" :key="index" class="align-center flex-grow-1">
-        <div class="button-container">
-          <v-btn :to="link.url" class="text-center" rounded>
-            {{ link.title }}
-          </v-btn>
-        </div>
-      </v-col>
     </v-container>
 
     <evolution></evolution>
 
+    <v-snackbar v-model="snackbar" :timeout="3000" top>{{ snackbarText }}</v-snackbar>
   </v-app>
 </template>
 
 <script>
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LCircleMarker } from "@vue-leaflet/vue-leaflet";
-import Evolution from './Evolution.vue';
+import data from "./data/data.json"
+import Evolution from "./Evolution.vue";
 
 export default {
   components: {
     LMap,
     LTileLayer,
     LCircleMarker,
-    Evolution
+    Evolution,
   },
   data() {
     return {
-      circle: {
-        center: [49.1193089, 6.1757156],
-        radius: 100,
-        color: 'red',
-      },
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      center: [49.1193089, 6.1757156],
-      zoom: 12,
-      links: [
-        {
-          title: "1835",
-          url: "/date/1835-page"
-        },
-        {
-          title: "1855",
-          url: "/date/1855-page"
-        },
-        {
-          title: "1875",
-          url: "/date/1875-page"
-        },
-        {
-          title: "1895",
-          url: "/date/1895-page"
-        }
-      ],
+      swissCenter: [46.8182, 8.2275],
+      center: [46.8182, 8.2275],
+      dates: {
+        1835 : {title: "1835", data: data["1835"]}, 
+        1855 : {title: "1855", data: data["1855"]}, 
+        1875 : {title: "1875", data: data["1875"]}, 
+        1895 : {title: "1895", data: data["1895"]}
+      },
+      selectedDate: "1835",
+      showSwiss: false,
+      zoom: 4,
+      snackbar: false,
+      snackbarText: "",
     };
-  }
+  },
+  methods: {
+    changeDate(date) {
+      this.selectedDate = date;
+    },
+    getRadius(count) {
+      return Math.sqrt(count / 20) * this.zoom * 10;
+    },
+    updateZoom(zoom) {
+      this.zoom = zoom;
+      this.showSwiss = zoom > 7;
+    },
+    toggleSwiss() {
+      this.showSwiss = !this.showSwiss;
+      if (this.showSwiss) {
+        this.zoom = 8;
+        this.center = this.swissCenter;
+      } else {
+        this.zoom = 4;
+        this.center = [46.8182, 8.2275];
+      }
+    },
+    showRegionInfo(key) {
+      const region = this.dates[this.selectedDate].data['foreign'][key];
+      this.snackbarText = `${key}: ${region.count} pensionnaires`;
+      this.snackbar = true;
+    }
+  },
 };
 </script>
 
@@ -105,7 +124,19 @@ export default {
   align-items: center;
 }
 
-.pt-20 {
-  padding-top: 20px;
+.map-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+}
+
+.dates-card {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1000;
+  max-height: 400px;
+  overflow-y: auto;
 }
 </style>
