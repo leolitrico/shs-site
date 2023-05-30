@@ -15,8 +15,8 @@ Le besoin d’un logement lors d’un séjour à Lausanne, que ce soit pour des 
             <v-card-title class="headline font-weight-bold">Carte des origines des pensionnaires pour chaque
                 année</v-card-title>
             <div style="flex: 1; position: relative;">
-                <l-map ref="map" @update:zoom="updateZoom" style="height: 100%; width: 100%" :zoom="zoom" :max-zoom="9"
-                    :min-zoom="3" :center="center">
+                <l-map ref="map" @update:zoom="updateZoom" @update:ready="mapReady" style="height: 100%; width: 100%"
+                    :zoom="zoom" :max-zoom="9" :min-zoom="3" :center="center">
                     <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
                     <l-circle-marker v-for="(region, key) in dates[selectedDate].data['foreign']" :key="key"
                         :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"
@@ -40,6 +40,8 @@ Le besoin d’un logement lors d’un séjour à Lausanne, que ce soit pour des 
     </v-container>
 
     <evolution></evolution>
+
+    <v-snackbar v-model="snackbar" :timeout="3000" top>{{ snackbarText }}</v-snackbar>
 </template>
 
 <script>
@@ -78,6 +80,11 @@ export default {
         changeDate(date) {
             this.selectedDate = date;
         },
+        mapReady(ready) {
+            if (ready) {
+                this.$refs.map.mapObject.invalidateSize();
+            }
+        },
         getRadius(count) {
             return Math.sqrt(count / 20) * this.zoom * 10;
         },
@@ -96,8 +103,13 @@ export default {
             }
         },
         showRegionInfo(key) {
-            const region = this.dates[this.selectedDate].data['foreign'][key];
-            this.snackbarText = `${key}: ${region.count} pensionnaires`;
+            if (this.showSwiss) {
+                const region = this.dates[this.selectedDate].data['swiss'][key];
+                this.snackbarText = `${key}: ${region.count} pensionnaires`;
+            } else {
+                const region = this.dates[this.selectedDate].data['foreign'][key];
+                this.snackbarText = `${key}: ${region.count} pensionnaires`;
+            }
             this.snackbar = true;
         }
     },
