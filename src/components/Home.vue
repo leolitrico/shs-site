@@ -16,15 +16,32 @@
                 <l-map ref="map" @update:zoom="updateZoom" @update:ready="mapReady" style="height: 100%; width: 100%"
                     :zoom="zoom" :max-zoom="9" :min-zoom="3" :center="center">
                     <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
-                    <l-circle-marker v-for="(region, key) in dates[selectedDate].data['foreign']" :key="key"
-                        :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"
-                        @click="showRegionInfo(key)"></l-circle-marker>
+                    <div v-if="!showSwiss" :key="'foreign'">
+                        <div v-if="showCircles">
+                            <l-circle-marker v-for="(region, key) in dates[selectedDate].data['foreign']" :key="key"
+                                :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"
+                                :color="region.color" @click="showRegionInfo(key)"></l-circle-marker>
+                        </div>
+                        <l-polyline v-for="(region, key) in dates[selectedDate].data['foreign']" :key="'line-' + key"
+                            :lat-lngs="[[region.latitude, region.longitude], [46.519962, 6.633597]]" :color="region.color"
+                            :weight="showLines ? 2 : 0"></l-polyline>
+                    </div>
                     <div v-if="showSwiss" :key="'swiss'">
-                        <l-circle-marker v-for="(region, key) in dates[selectedDate].data['swiss']" :key="key + 'swiss'"
-                            :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"
-                            @click="showRegionInfo(key)"></l-circle-marker>
+                        <div v-if="showCircles">
+                            <l-circle-marker v-for="(region, key) in dates[selectedDate].data['swiss']" :key="key + 'swiss'"
+                                :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"
+                                :color="region.color" @click="showRegionInfo(key)"></l-circle-marker>
+                        </div>
+                        <l-polyline v-for="(region, key) in dates[selectedDate].data['swiss']" :key="'line-' + key"
+                            :lat-lngs="[[region.latitude, region.longitude], [46.519962, 6.633597]]" :color="region.color"
+                            :weight="showLines ? 1.5 : 0"></l-polyline>
                     </div>
                 </l-map>
+                <div class="toggles">
+                    <v-btn class="line-toggle" @click="toggleLines">{{ showLines ? 'Hide Lines' : 'Show Lines' }}</v-btn>
+                    <v-btn class="circle-toggle" @click="toggleCircles">{{ showCircles ? 'Hide Circles' : 'Show Circles'
+                    }}</v-btn>
+                </div>
                 <v-btn class="map-toggle" @click="toggleSwiss">{{ showSwiss ? 'International' : 'Suisse' }}</v-btn>
                 <v-card class="dates-card">
                     <v-list>
@@ -44,7 +61,7 @@
 
 <script>
 import "leaflet/dist/leaflet.css";
-import { LMap, LTileLayer, LCircleMarker } from "@vue-leaflet/vue-leaflet";
+import { LMap, LTileLayer, LCircleMarker, LPolyline } from "@vue-leaflet/vue-leaflet";
 import data from "../data/data.json"
 import Evolution from "../components/Evolution.vue";
 
@@ -54,6 +71,7 @@ export default {
         LMap,
         LTileLayer,
         LCircleMarker,
+        LPolyline,
         Evolution,
     },
     data() {
@@ -70,13 +88,21 @@ export default {
             selectedDate: "1835",
             showSwiss: false,
             zoom: 4,
+            showCircles: true,
             snackbar: false,
+            showLines: true,
             snackbarText: "",
         };
     },
     methods: {
+        toggleLines() {
+            this.showLines = !this.showLines;
+        },
         changeDate(date) {
             this.selectedDate = date;
+        },
+        toggleCircles() {
+            this.showCircles = !this.showCircles;
         },
         mapReady(ready) {
             if (ready) {
@@ -115,6 +141,17 @@ export default {
 </script>
 
 <style scoped>
+.toggles {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+}
+
+.circle-toggle {
+    margin-left: 16px;
+}
+
 .horizontal-bar {
     background-color: brown;
     padding: 16px;
