@@ -1013,21 +1013,21 @@
         
         },
         "swiss" : {
-            "St. Gallen": 
+            "St. Gall": 
                 {
                     "count": 22,
                     "latitude": 47.423225,
                     "longitude": 9.376857
                 }
             ,
-            "Bern / Berne": 
+            "Berne": 
                 {
                     "count": 27,
                     "latitude": 46.94809,
                     "longitude": 7.44744
                 }
             ,
-            "Fribourg / Freiburg": 
+            "Fribourg": 
                 {
                     "count": 87,
                     "latitude": 46.8025,
