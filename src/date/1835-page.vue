@@ -3,6 +3,16 @@
     <v-col>
       <h1 class="display-2 font-weight-bold text-center">1835</h1>
       <v-card class="elevation-5">
+        <v-card-title class="headline font-weight-bold">Statistics</v-card-title>
+        <v-card-text>
+          <v-btn class="foreign-toggle" @click="toggleSwiss"> {{ showForeignImage ? 'International' : 'Suisse' }}</v-btn>
+          <div class="image-wrapper" style="position: relative;">
+            <img v-if="showForeignImage" :src="foreignImageSrc" alt="Foreign Origins" class="img-diagram" />
+            <img v-if="showSwissImage" :src="swissImageSrc" alt="Swiss Origins" class="img-diagram" />
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card class="elevation-5">
         <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
         <v-card-text>
           <p>
@@ -89,6 +99,32 @@
   </v-main>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      showForeignImage: true,
+      showSwissImage: false,
+      year: 1835,
+    };
+  },
+  computed: {
+    foreignImageSrc() {
+      return require(`@/assets/plots_per_year/foreign_origins_${this.year}.png`);
+    },
+    swissImageSrc() {
+      return require(`@/assets/plots_per_year/swiss_origins_${this.year}.png`);
+    },
+  },
+  methods: {
+    toggleSwiss() {
+      this.showForeignImage = !this.showForeignImage;
+      this.showSwissImage = !this.showSwissImage;
+    },
+  },
+};
+</script>
+
 <style scoped>
 .v-card {
   margin: 20px 100px;
@@ -114,8 +150,38 @@
 }
 
 img {
+  display: block;
+  margin: 0 auto;
   width: 60%;
   height: 60%;
 }
+
+.img-diagram {
+  width: 45%;
+  height: 45%;
+  margin-top: -100px;
+  margin-bottom: -50px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  min-height: 400px;
+}
+
+.toggles {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.foreign-toggle {
+  margin-left: 16px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
 </style>
-  
