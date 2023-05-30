@@ -2,7 +2,6 @@
   <v-app>
     <Navigation></Navigation>
     <router-view class="router-view-with-margin" />
-    <v-snackbar v-model="snackbar" :timeout="3000" top>{{ snackbarText }}</v-snackbar>
   </v-app>
 </template>
 
