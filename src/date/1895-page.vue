@@ -10,26 +10,29 @@
             </p>
           </v-card-text>
         </v-card>
+        <v-card>
+
       <div class="img-container">
-          <v-card>
             <img src="../assets/icono_9.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
               Vue sur la façade est des bâtiments de l'Ancienne Académie, rue Cité-Devant. A gauche, adossée aux bâtiments, l'ancienne Cure des professeurs.            
             </p>
           </v-card-text>
-          </v-card>
       </div> 
+    </v-card>
+    <v-card>
+
       <div class="img-container">
-          <v-card>
             <img src="../assets/icono_10.jpg" alt="Image"/>
           <v-card-text class="img-text">
             <p>
               1891. Fête universitaire de mai 1891: Arrivée du cortège à la place Saint-François depuis l'avenue du Théâtre.
             </p>
           </v-card-text>
-          </v-card>
       </div> 
+    </v-card>
+
         <v-card class="elevation-5">
           <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
           <v-card-text>
