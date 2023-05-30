@@ -167,11 +167,6 @@
                 "count": 15,
                 "latitude": 47.559,
                 "longitude": 7.588
-            },
-            "Vaud": {
-                "count": 666,
-                "latitude": 46.523,
-                "longitude": 6.632
             }
         }
     },
@@ -278,11 +273,6 @@
                 "count": 9,
                 "latitude": 46.191,
                 "longitude": 7.499
-            },
-            "Vaud": {
-                "count": 1039,
-                "latitude": 46.519,
-                "longitude": 6.632
             },
             "Genève": {
                 "count": 113,
@@ -490,11 +480,6 @@
             }
         },
         "swiss": {
-            "Vaud": {
-                "count": 829,
-                "latitude": 46.534,
-                "longitude": 6.592
-            },
             "Valais": {
                 "count": 9,
                 "latitude": 46.487,
@@ -721,11 +706,6 @@
             }
         },
         "swiss": {
-            "Vaud": {
-                "count": 694,
-                "latitude": 46.519653,
-                "longitude": 6.632273
-            },
             "Saint-Gall": {
                 "count": 22,
                 "latitude": 47.423225,
