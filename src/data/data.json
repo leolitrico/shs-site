@@ -229,8 +229,8 @@
             },
             "France": {
                 "count": 54,
-                "latitude": 46.227638,
-                "longitude": 2.213749000000007
+                "latitude": 48.866667,
+                "longitude": 2.333333
             },
             "Allemagne": {
                 "count": 54,
@@ -430,8 +430,8 @@
             },
             "France": {
                 "count": 111,
-                "latitude": 46.227638,
-                "longitude": 2.213749
+                "latitude": 48.866667,
+                "longitude": 2.333333
             },
             "Autriche": {
                 "count": 4,
@@ -651,8 +651,8 @@
             },
             "France": {
                 "count": 92,
-                "latitude": 46.227638,
-                "longitude": 2.213749
+                "latitude": 48.866667,
+                "longitude": 2.333333
             },
             "Grèce": {
                 "count": 1,
