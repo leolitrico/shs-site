@@ -63,8 +63,8 @@ export default {
 }
 
 .image-container img {
-  max-width: 80%;
-  max-height: 80%;
-  margin-top: -45px;
+  max-width: 70%;
+  max-height: 50%;
+  margin-top: -65px;
 }
 </style>
