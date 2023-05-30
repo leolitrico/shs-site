@@ -1,12 +1,22 @@
 <template>
   <v-app>
-    <v-container>
+    <v-app-bar app color="brown" dark>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-toolbar-title>My Website</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn text to="/">Home</v-btn>
+      <v-btn text to="/date/1835-page">1835</v-btn>
+      <v-btn text to="/date/1855-page">1855</v-btn>
+      <v-btn text to="/date/1875-page">1875</v-btn>
+      <v-btn text to="/date/1895-page">1895</v-btn>
+    </v-app-bar>
+    <v-container class="pt-10">
       <v-card class="elevation-5">
         <v-card-title class="headline font-weight-bold">Intro</v-card-title>
-          <v-card-text>
-            <p>Lausanne est une belle ville</p>
-            <p>super belle</p>
-          </v-card-text>
+        <v-card-text>
+          <p>Lausanne est une belle ville</p>
+          <p>super belle</p>
+        </v-card-text>
       </v-card>
     </v-container>
     <v-container>
@@ -31,6 +41,9 @@
         </div>
       </v-card>
     </v-container>
+
+    <evolution></evolution>
+
     <v-snackbar v-model="snackbar" :timeout="3000" top>{{ snackbarText }}</v-snackbar>
   </v-app>
 </template>
@@ -39,12 +52,14 @@
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LCircleMarker } from "@vue-leaflet/vue-leaflet";
 import data from "./data/data.json"
+import Evolution from "./Evolution.vue";
 
 export default {
   components: {
     LMap,
     LTileLayer,
     LCircleMarker,
+    Evolution,
   },
   data() {
     return {
