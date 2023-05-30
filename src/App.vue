@@ -18,6 +18,6 @@ export default {
 
 <style scoped>
 .router-view-with-margin {
-  margin-top: 80px;
+  margin-top: 10px;
 }
 </style>
