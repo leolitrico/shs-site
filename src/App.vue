@@ -11,28 +11,27 @@
     </v-container>
     <v-container>
       <v-card class="elevation-5" style="display: flex; height: 800px; flex-direction: column;">
-        <v-card-title class="headline font-weight-bold">Carte</v-card-title>
-        <div style="flex: 1">
+        <v-card-title class="headline font-weight-bold">Carte des origines des pensionnaires pour chaque année</v-card-title>
+        <div style="flex: 1; position: relative;">
           <l-map ref="map" @update:zoom="updateZoom" style="height: 100%; width: 100%" :zoom="zoom" :max-zoom="9" :min-zoom="3" :center="center">
             <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
-            <l-circle-marker v-for="(region, index) in dates[selectedDate].data['foreign']" :key="index" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"></l-circle-marker>
+            <l-circle-marker v-for="(region, key) in dates[selectedDate].data['foreign']" :key="key" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)" @click="showRegionInfo(key)"></l-circle-marker>
             <div v-if="showSwiss" :key="'swiss'">
-              <l-circle-marker v-for="(region, index) in dates[selectedDate].data['swiss']" :key="index + 'swiss'" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"></l-circle-marker>
+              <l-circle-marker v-for="(region, key) in dates[selectedDate].data['swiss']" :key="key + 'swiss'" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)" @click="showRegionInfo(key)"></l-circle-marker>
             </div>
           </l-map>
           <v-btn class="map-toggle" @click="toggleSwiss">{{ showSwiss ? 'International' : 'Suisse' }}</v-btn>
+          <v-card class="dates-card">
+            <v-list>
+              <v-list-item v-for="(date, index) in dates" :key="index" @click="changeDate(date.title)">
+                <v-list-item-title>{{ date.title }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-card>
         </div>
       </v-card>
     </v-container>
-    <v-container class="horizontal-bar">
-        <v-col v-for="(date, index) in dates" :key="index" class="align-center flex-grow-1">
-          <div class="button-container">
-            <v-btn class="text-center" @click="changeDate(date.title)" rounded>
-            {{ date.title }}
-          </v-btn>
-          </div>
-        </v-col>
-    </v-container>
+    <v-snackbar v-model="snackbar" :timeout="3000" top>{{ snackbarText }}</v-snackbar>
   </v-app>
 </template>
 
@@ -61,6 +60,8 @@ export default {
       selectedDate: "1835",
       showSwiss: false,
       zoom: 4,
+      snackbar: false,
+      snackbarText: "",
     };
   },
   methods: {
@@ -83,6 +84,11 @@ export default {
         this.zoom = 4;
         this.center = [46.8182, 8.2275];
       }
+    },
+    showRegionInfo(key) {
+      const region = this.dates[this.selectedDate].data['foreign'][key];
+      this.snackbarText = `${key}: ${region.count} pensionnaires`;
+      this.snackbar = true;
     }
   },
 };
@@ -108,5 +114,14 @@ export default {
   top: 16px;
   right: 16px;
   z-index: 1000;
+}
+
+.dates-card {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1000;
+  max-height: 400px;
+  overflow-y: auto;
 }
 </style>
