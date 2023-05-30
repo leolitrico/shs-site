@@ -10,6 +10,11 @@
             <img v-if="showForeignImage" :src="foreignImageSrc" alt="Foreign Origins" class="img-diagram" />
             <img v-if="showSwissImage" :src="swissImageSrc" alt="Swiss Origins" class="img-diagram" />
           </div>
+          <v-card-text class="img-text">
+            <p>
+              Provenance des pensionnaires à Lausanne en 1875 (en %)
+            </p>
+          </v-card-text>
         </v-card-text>
       </v-card>
       <v-card class="elevation-5">
