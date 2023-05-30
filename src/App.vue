@@ -14,8 +14,10 @@
       <v-card class="elevation-5">
         <v-card-title class="headline font-weight-bold">Intro</v-card-title>
         <v-card-text>
-          <p>Lausanne est une belle ville</p>
-          <p>super belle</p>
+          <p>
+            La ville de Lausanne que l’on connaît aujourd’hui est multiculturelle, centre d’intérêt européen et mondial grâce à son offre culturelle, de formation, ainsi qu’à son importance économique et à ses paysages incontournables. Le chef-lieu vaudois, quatrième ville suisse, est donc considéré à présent point majeur de passage et d’attraction touristique : mais quelles sont les origines de cette attractivité (en Suisse et également à l’étranger), comment les pratiques de mobilité et d’hébergement ont-elles influencé le développement économique et touristique de la ville au fil des années ? Dans notre site vous pourrez vous immerger, à l’aide des cartes, des images historiques et de nos statistiques, dans l’évolution de la mobilité des personnes à Lausanne.
+Le besoin d’un logement lors d’un séjour à Lausanne, que ce soit pour des raisons professionnelles, académiques ou pour du simple loisir, entraîne des activités d’hébergement non négligeables qui, déjà à partir du XVIIIe siècle, sont visibles à travers les recensements des pensions, lesquels ont servi de base pour nos analyses : nous nous sommes basé.e.s sur les années suivantes : 1835, 1855, 1875 et 1895, afin d’en faire une analyse constante au fil du XIXe siècle. 
+          </p>
         </v-card-text>
       </v-card>
     </v-container>
