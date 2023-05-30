@@ -6,6 +6,7 @@ import Date1855 from './date/1855-page.vue'
 import Date1875 from './date/1875-page.vue'
 import Date1895 from './date/1895-page.vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import { initializeApp } from "firebase/app";
 
 // Vuetify
 import 'vuetify/styles'
@@ -28,5 +29,6 @@ const router = createRouter({
     { path: '/date/1895-page', component: Date1895 },
   ],
 })
+
 
 createApp(App).use(router).use(vuetify).mount('#app')

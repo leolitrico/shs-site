@@ -10,6 +10,7 @@
   "dependencies": {
     "@vue-leaflet/vue-leaflet": "^0.9.0",
     "core-js": "^3.8.3",
+    "firebase": "^9.22.1",
     "leaflet": "^1.9.4",
     "vue": "^3.2.13",
     "vue-router": "^4.2.2",
