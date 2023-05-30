@@ -13,20 +13,21 @@
       <v-card class="elevation-5" style="display: flex; height: 800px; flex-direction: column;">
         <v-card-title class="headline font-weight-bold">Carte</v-card-title>
         <div style="flex: 1">
-          <l-map ref="map" @update:zoom="updateZoom(zoom)" style="height: 100%; width: 100%" :zoom="zoom" :max-zoom="8" :min-zoom="3" :center="swissCenter">
+          <l-map ref="map" @update:zoom="updateZoom" style="height: 100%; width: 100%" :zoom="zoom" :max-zoom="9" :min-zoom="3" :center="center">
             <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
             <l-circle-marker v-for="(region, index) in dates[selectedDate].data['foreign']" :key="index" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"></l-circle-marker>
             <div v-if="showSwiss" :key="'swiss'">
               <l-circle-marker v-for="(region, index) in dates[selectedDate].data['swiss']" :key="index + 'swiss'" :lat-lng="[region.latitude, region.longitude]" :radius="getRadius(region.count)"></l-circle-marker>
             </div>
           </l-map>
+          <v-btn class="map-toggle" @click="toggleSwiss">{{ showSwiss ? 'International' : 'Suisse' }}</v-btn>
         </div>
       </v-card>
     </v-container>
     <v-container class="horizontal-bar">
         <v-col v-for="(date, index) in dates" :key="index" class="align-center flex-grow-1">
           <div class="button-container">
-            <v-btn class="text-center" rounded>
+            <v-btn class="text-center" @click="changeDate(date.title)" rounded>
             {{ date.title }}
           </v-btn>
           </div>
@@ -50,6 +51,7 @@ export default {
     return {
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       swissCenter: [46.8182, 8.2275],
+      center: [46.8182, 8.2275],
       dates: {
         1835 : {title: "1835", data: data["1835"]}, 
         1855 : {title: "1855", data: data["1855"]}, 
@@ -70,7 +72,17 @@ export default {
     },
     updateZoom(zoom) {
       this.zoom = zoom;
-      this.showSwiss = zoom > 6;
+      this.showSwiss = zoom > 7;
+    },
+    toggleSwiss() {
+      this.showSwiss = !this.showSwiss;
+      if (this.showSwiss) {
+        this.zoom = 8;
+        this.center = this.swissCenter;
+      } else {
+        this.zoom = 4;
+        this.center = [46.8182, 8.2275];
+      }
     }
   },
 };
@@ -90,7 +102,11 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
+.map-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+}
 </style>
-
-
-
