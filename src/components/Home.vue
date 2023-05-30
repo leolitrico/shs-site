@@ -15,8 +15,8 @@ Le besoin d’un logement lors d’un séjour à Lausanne, que ce soit pour des 
             <v-card-title class="headline font-weight-bold">Carte des origines des pensionnaires pour chaque
                 année</v-card-title>
             <div style="flex: 1; position: relative;">
-                <l-map ref="map" @update:zoom="updateZoom" @update:ready="mapReady" style="height: 100%; width: 100%"
-                    :zoom="zoom" :max-zoom="9" :min-zoom="3" :center="center">
+                <l-map ref="map" @update:zoom="updateZoom" style="height: 100%; width: 100%"
+                    :zoom="zoom" :max-zoom="9" :min-zoom="3" @update:bounds="updateBounds" :bounds="bounds" :center="center">
                     <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
                     <div v-if="!showSwiss" :key="'foreign'">
                         <div v-if="showCircles">
@@ -79,7 +79,9 @@ export default {
     data() {
         return {
             url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-            swissCenter: [46.8182, 8.2275],
+            swissBoundsOut: [[64.88626540914477, 45.615234375], [19.559790136497412, -30.673828125000004]],
+            swissBoundsIn: [[48.20271028869975, 9.970092773437502], [45.37530235052552, 5.202026367187501]],
+            bounds: [[64.88626540914477, 45.615234375], [19.559790136497412, -30.673828125000004]],
             center: [46.8182, 8.2275],
             dates: {
                 1835: { title: "1835", data: data["1835"] },
@@ -106,11 +108,6 @@ export default {
         toggleCircles() {
             this.showCircles = !this.showCircles;
         },
-        mapReady(ready) {
-            if (ready) {
-                this.$refs.map.mapObject.invalidateSize();
-            }
-        },
         getRadius(count) {
             return Math.sqrt(count / 20) * this.zoom * 10;
         },
@@ -118,14 +115,14 @@ export default {
             this.zoom = zoom;
             this.showSwiss = zoom > 7;
         },
+        updateBounds() {
+        },
         toggleSwiss() {
             this.showSwiss = !this.showSwiss;
             if (this.showSwiss) {
-                this.zoom = 8;
-                this.center = this.swissCenter;
+                this.bounds = this.swissBoundsIn;
             } else {
-                this.zoom = 4;
-                this.center = [46.8182, 8.2275];
+                this.bounds = this.swissBoundsOut;
             }
         },
         showRegionInfo(key) {
