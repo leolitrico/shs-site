@@ -1,6 +1,12 @@
 {
     "1835": {
         "foreign": {
+            "Allemagne": {
+                "count": 45,
+                "latitude": 51.165691,
+                "longitude": 10.451526000000058,
+                "color": "#d02224"
+            },
             "Prusse": {
                 "count": 3,
                 "latitude": 52.516667,
@@ -24,12 +30,6 @@
                 "latitude": 48.866667,
                 "longitude": 2.333333,
                 "color": "#9c191b"
-            },
-            "Allemagne": {
-                "count": 45,
-                "latitude": 51.165691,
-                "longitude": 10.451526000000058,
-                "color": "#d02224"
             },
             "Hollande": {
                 "count": 5,
@@ -235,6 +235,12 @@
                 "longitude": 24.96676099999998,
                 "color": "#ec8385"
             },
+            "Allemagne": {
+                "count": 54,
+                "latitude": 51.165691,
+                "longitude": 10.451526000000058,
+                "color": "#9c191b"
+            },
             "Prusse": {
                 "count": 5,
                 "latitude": 52.52000659999999,
@@ -269,12 +275,6 @@
                 "count": 54,
                 "latitude": 48.866667,
                 "longitude": 2.333333,
-                "color": "#9c191b"
-            },
-            "Allemagne": {
-                "count": 54,
-                "latitude": 51.165691,
-                "longitude": 10.451526000000058,
                 "color": "#9c191b"
             },
             "Ecosse": {
@@ -463,17 +463,17 @@
                 "longitude": 37.6173,
                 "color": "#d02224"
             },
-            "Prusse": {
-                "count": 20,
-                "latitude": 52.520007,
-                "longitude": 13.404954,
-                "color": "#e35053"
-            },
             "Allemagne": {
                 "count": 91,
                 "latitude": 51.165691,
                 "longitude": 10.451526000000058,
                 "color": "#9c191b"
+            },
+            "Prusse": {
+                "count": 20,
+                "latitude": 52.520007,
+                "longitude": 13.404954,
+                "color": "#e35053"
             },
             "Italie": {
                 "count": 35,
