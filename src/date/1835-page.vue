@@ -1,8 +1,9 @@
 <template>
   <v-main>
     <v-col>
-      <h1 class="display-2 font-weight-bold text-center">1835</h1>
-      <v-card class="elevation-5">
+      <h1 class="display-2 font-weight-bold text-center">1835: La nature bienfaitrice du tourisme helvétique
+      </h1>
+      <v-card>
         <v-card-title class="headline font-weight-bold">Statistics</v-card-title>
         <v-card-text>
           <v-btn class="foreign-toggle" @click="toggleSwiss"> {{ showForeignImage ? 'International' : 'Suisse' }}</v-btn>
@@ -17,8 +18,8 @@
           </v-card-text>
         </v-card-text>
       </v-card>
-      <v-card class="elevation-5">
-        <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
+      <v-card class="elevation-4">
+        <!-- <v-card-title class="headline font-weight-bold">Introduction</v-card-title> -->
         <v-card-text>
           <p>
             De simple lieu de passage sur l’axe Nord-Sud grâce à son emplacement stratégique au centre de l’Europe, la
@@ -41,7 +42,7 @@
         </div>
       </v-card>
       <v-card class="elevation-5">
-        <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
+        <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
             Entre 1835 et 1855 une augmentation de voyageurs provenant d’Angleterre peut être observée. Selon le courant
@@ -76,7 +77,7 @@
         </div>
       </v-card>
       <v-card class="elevation-5">
-        <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
+        <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
             A Lausanne, autour de l’année 1835, nous pouvons retrouver une concentration d’hôtels dans la zone entre la
@@ -132,7 +133,7 @@ export default {
 
 <style scoped>
 .v-card {
-  margin: 20px 100px;
+  margin: 20px 240px;
   padding: 10px;
 }
 
@@ -188,5 +189,9 @@ img {
   position: absolute;
   top: 20px;
   right: 10px;
+}
+
+p {
+    text-align: justify;
 }
 </style>
