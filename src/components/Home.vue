@@ -18,7 +18,7 @@ Le besoin d’un logement lors d’un séjour à Lausanne, que ce soit pour des 
                 année</v-card-title>
             <div style="flex: 1; position: relative;">
                 <l-map ref="map" @update:zoom="updateZoom" style="height: 100%; width: 100%"
-                    :zoom="zoom" :max-zoom="9" :min-zoom="3" @update:bounds="updateBounds" :bounds="bounds" :center="center">
+                    :zoom="zoom" :max-zoom="10" :min-zoom="3" @update:bounds="updateBounds" :bounds="bounds" :center="center">
                     <l-tile-layer :url="url" layer-type="base"></l-tile-layer>
                     <div v-if="!showSwiss" :key="'foreign'">
                         <div v-if="showCircles">
