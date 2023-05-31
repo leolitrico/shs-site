@@ -21,15 +21,16 @@
         <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
-            Le boom industriel et les grandes constructions réalisées dans les décennies précédentes peuvent sûrement
-            expliquer la constante arrivée de gens (suisses et étrangers) à Lausanne. Les recensements montrent une
-            augmentation des origines étrangères: seulement en 1875, nous observons des arrivées depuis le Danemark,
-            Russie, Prussie, Turquie, Roumanie, Algérie, Japon et Egypte, et la liste n’est pas exhaustive. Nous
-            remarquons aussi un fait intéressant: dans l’année 1875 apparaissent des pensionnaires d’origine américaine
-            qui augmentent jusqu’en 1895. Notre hypothèse est que suite à la forte émigration de suisses qui a eu lieu
-            entre 1850 et 1890 vers les États-Unis à cause des tensions économiques présentes en Europe, dans les années
-            suivantes les habitants qui ont fui sont retournés dans leur pays d’origine pour rendre visite à leurs
-            proches, et qui ont trouvé donc logement dans des pensions. </p>
+            Le boom industriel et les grandes constructions réalisées dans les décennies précédentes peuvent sûrement expliquer la 
+            constante arrivée de gens (suisses et étrangers) à Lausanne. Les recensements montrent une augmentation des origines 
+            étrangères: seulement en 1875, nous observons des arrivées depuis le Danemark, Russie, Prusse, Turquie, Roumanie, 
+            Algérie, Japon et Egypte, et la liste n’est pas exhaustive. Nous remarquons aussi un fait intéressant : en 1875 
+            apparaît un nombre important de pensionnaires d’origine américaine qui augmente jusqu’en 1895. Notre hypothèse est 
+            que cette tendance est due à la forte émigration de Suisses qui a eu lieu entre 1850 et 1890 vers les États-Unis à 
+            cause des tensions économiques présentes en Europe. Durant les années suivantes, les habitants qui ont fui sont sans 
+            doute retournés dans leur pays d’origine pour rendre visite à leurs proches : ils ont donc trouvé logement dans des 
+            pensions. 
+          </p>
         </v-card-text>
       </v-card>
       <v-card>
@@ -65,14 +66,13 @@
         <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
-            À partir du dernier quart de siècle nous observons une forte augmentation du pourcentage de provenance russe:
-            cela peut s’expliquer, en plus du tourisme, avec l’asile politique ou pour des raisons de travail: dans
-            l’histoire de l’Académie (aujourd’hui Université), en effet, plusieurs réfugiés politiques ont occupé des
-            chaires dans les départements de italien, anglais, économie politique ou encore de latin. L’augmentation
-            d’étrangers stimule, en même temps, en outre de la construction de plusieurs hôtels, l’ouverture de plus de
-            pensions. De plus, le bon « climat tempéré » de la région et les différentes évolutions dans le champ de la
-            médecine apportent à Lausanne la réputation de « mecque médicale » et à l’ouverture de cliniques mais aussi de
-            plusieurs lieux d’hébergement et de soins.
+            À partir du dernier quart de siècle, nous observons une forte augmentation du pourcentage de pensionnaires russes : 
+            cela peut s’expliquer, en plus du tourisme, avec l’asile politique ou pour des raisons de travail. En effet, dans 
+            l’histoire de l’Académie (aujourd’hui Université), plusieurs réfugiés politiques ont occupé des chaires dans les 
+            départements d’italien, d’anglais, d’économie politique ou encore de latin. L’augmentation d’étrangers stimule, en 
+            même temps, outre la construction de plusieurs hôtels, l’ouverture de davantage de pensions. De plus, le bon « climat 
+            tempéré » de la région et les différentes évolutions dans le champ de la médecine apportent à Lausanne la réputation 
+            de « mecque médicale » et à l’ouverture de cliniques mais aussi de plusieurs lieux d’hébergement et de soins. 
           </p>
         </v-card-text>
       </v-card>

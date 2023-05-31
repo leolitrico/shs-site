@@ -21,10 +21,9 @@
         <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
-            Dans les recensements de 1855 nous constatons une augmentation générale du tourisme étranger. En parallèle, la
-            ville connaît également une augmentation de l’immigration italienne remarquable : elle voit son arrivée
-            notamment pour des métiers de massiers ou de manœuvre, ou encore pour devenir maçon. En 1856, après la gare de
-            Lausanne voit le jour. </p>
+            Dans les recensements de 1855 nous constatons une augmentation générale du tourisme étranger. En parallèle, 
+            la ville connaît également une augmentation de l’immigration italienne remarquable, notamment pour des métiers 
+            de massiers ou de manœuvre, ou encore pour devenir maçon. En 1856, la gare de Lausanne voit le jour </p>
         </v-card-text>
       </v-card>
       <v-card>
@@ -41,14 +40,13 @@
         <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
-            Son aboutissement est dû en grande partie aux forces de travail italiennes, provenant pour la majorité du Nord
-            de leur pays, et elles constituaient la plupart des ouvriers qui s’occupaient de la construction du chemin de
-            fer, ainsi que beaucoup d’autres constructions présentes dans la ville, dont une partie d’entre eux sont
-            finalement restés à Lausanne pour le long terme.
-            La construction du réseau ferroviaire et son développement constant ont besoin de personnel technique
-            spécialisé dans le domaine de l’ingénierie, notamment des ingénieurs allemands (en outre des suisses), réputés
-            pour leurs qualités en matière: nous observons donc aussi un grand pourcentage de provenance d’Allemagne dans
-            les pensions.
+            Son aboutissement est dû en grande partie aux forces de travail italiennes, provenant pour la majorité du Nord de leur 
+            pays. Les Italiens représentaient la plupart des ouvriers qui s’occupaient de la construction du chemin de fer, 
+            ainsi que beaucoup d’autres constructions présentes dans la ville. Une partie de ces travailleurs italiens sont 
+            finalement restés à Lausanne pour le long terme. La construction du réseau ferroviaire et son développement 
+            constant ont besoin de personnel technique spécialisé dans le domaine de l’ingénierie, notamment des ingénieurs 
+            allemands (en outre des Suisses), réputés pour leurs qualités en matière : nous observons donc aussi un grand 
+            pourcentage de provenance d’Allemagne dans les pensions. 
           </p>
         </v-card-text>
       </v-card>
