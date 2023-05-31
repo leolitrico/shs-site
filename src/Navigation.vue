@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="brown" dark>
+  <v-app-bar app color="#e35053" dark>
     <v-app-bar-nav-icon></v-app-bar-nav-icon>
     <v-toolbar-title class="title">SHS - Pensions à Lausanne au XIXe siècle</v-toolbar-title>
     <v-spacer></v-spacer>
@@ -24,6 +24,7 @@ export default {
 .title {
   font-size: 24px;
   font-weight: bold;
+  color: white;
 }
 
 .links {
