@@ -1,7 +1,9 @@
 <template>
     <v-container class="pt-10 introduction">
+        <h1 class="display-2 font-weight-bold text-center main-title">Lausanne Time Machine - Pensions à Lausanne au XIXe siècle</h1>
+
+        <!-- <v-card-title class="headline font-weight-bold">Lausanne Time Machine - Pensions à Lausanne au XIXe siècle</v-card-title> -->
         <v-card class="elevation-5">
-            <v-card-title class="headline font-weight-bold">Intro</v-card-title>
             <v-card-text>
                 <p>
                     Lausanne telle qu’on la connaît aujourd’hui est une ville cosmopolite. C’est un centre d’intérêt européen et mondial grâce à sa diversité culturelle, ses offres de formation, ainsi qu’à son importance économique et à ses paysages incontournables. Le chef-lieu vaudois, quatrième ville suisse, est donc considéré à présent comme un point majeur de passage et d’attraction touristique ; mais quelles sont les origines (suisses et étrangères) de cette attractivité ? Comment les pratiques de mobilité et d’hébergement ont-elles influencé le développement économique et touristique de la ville au fil des années ? Sur notre site, vous pourrez vous immerger, à l’aide de cartes, d’images historiques et de nos statistiques, dans l’évolution de la mobilité des personnes à Lausanne.
@@ -186,5 +188,13 @@ export default {
 
 .introduction {
     margin-top: 50px;
+}
+
+.main-title{
+    padding-bottom: 25px;
+}
+
+p {
+    text-align: justify;
 }
 </style>

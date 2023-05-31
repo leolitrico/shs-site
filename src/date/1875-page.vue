@@ -1,8 +1,8 @@
 <template>
   <v-main>
     <v-col>
-      <h1 class="display-2 font-weight-bold text-center">1875</h1>
-      <v-card class="elevation-5">
+      <h1 class="display-2 font-weight-bold text-center">1875: Lausanne cosmopolite</h1>
+      <v-card>
         <v-card-title class="headline font-weight-bold">Statistics</v-card-title>
         <v-card-text>
           <v-btn class="foreign-toggle" @click="toggleSwiss"> {{ showForeignImage ? 'International' : 'Suisse' }}</v-btn>
@@ -18,7 +18,7 @@
         </v-card-text>
       </v-card>
       <v-card class="elevation-5">
-        <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
+        <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
             Le boom industriel et les grandes constructions réalisées dans les décennies précédentes peuvent sûrement
@@ -62,7 +62,7 @@
       </v-card>
 
       <v-card class="elevation-5">
-        <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
+        <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
             À partir du dernier quart de siècle nous observons une forte augmentation du pourcentage de provenance russe:
@@ -121,7 +121,7 @@ export default {
   
 <style scoped>
 .v-card {
-  margin: 20px 100px;
+  margin: 20px 240px;
   padding: 10px;
 }
 
@@ -177,5 +177,9 @@ img {
   position: absolute;
   top: 20px;
   right: 10px;
+}
+
+p {
+    text-align: justify;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <v-main>
     <v-col>
-      <h1 class="display-2 font-weight-bold text-center">1895</h1>
-      <v-card class="elevation-5">
+      <h1 class="display-2 font-weight-bold text-center">1895: Retour sur un siècle de grande mobilité</h1>
+      <v-card>
         <v-card-title class="headline font-weight-bold">Statistics</v-card-title>
         <v-card-text>
           <v-btn class="foreign-toggle" @click="toggleSwiss"> {{ showForeignImage ? 'International' : 'Suisse' }}</v-btn>
@@ -18,7 +18,7 @@
         </v-card-text>
       </v-card>
       <v-card class="elevation-5">
-        <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
+        <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
             Grand événement qui a marqué les dernières années du XIXème siècle à Lausanne est le changement de statut de
@@ -58,7 +58,7 @@
       </v-card>
 
       <v-card class="elevation-5">
-        <v-card-title class="headline font-weight-bold">Lausanne</v-card-title>
+        <!-- <v-card-title class="headline font-weight-bold">Lausanne</v-card-title> -->
         <v-card-text>
           <p>
             Nous avons donc pu voir l’évolution des flux migratoires au cours du XIXème siècle: l’arrivée d’étrangers,
@@ -106,7 +106,7 @@ export default {
   
 <style scoped>
 .v-card {
-  margin: 20px 100px;
+  margin: 20px 240px;
   padding: 10px;
 }
 
@@ -162,5 +162,9 @@ img {
   position: absolute;
   top: 20px;
   right: 10px;
+}
+
+p {
+    text-align: justify;
 }
 </style>
