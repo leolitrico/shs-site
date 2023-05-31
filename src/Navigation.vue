@@ -9,7 +9,7 @@
       <router-link to="/date/1855-page" class="link">1855</router-link>
       <router-link to="/date/1875-page" class="link">1875</router-link>
       <router-link to="/date/1895-page" class="link">1895</router-link>
-      <router-link to="/bibliography" class="link last">Bibliography</router-link>
+      <router-link to="/bibliography" class="link last">Bibliographie</router-link>
     </div>
   </v-app-bar>
 </template>

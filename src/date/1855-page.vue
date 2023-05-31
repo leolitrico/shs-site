@@ -3,7 +3,7 @@
     <v-col>
       <h1 class="display-2 font-weight-bold text-center">1855: La main d’oeuvre italienne</h1>
       <v-card>
-        <v-card-title class="headline font-weight-bold">Statistics</v-card-title>
+        <v-card-title class="headline font-weight-bold">Statistiques</v-card-title>
         <v-card-text>
           <v-btn class="foreign-toggle" @click="toggleSwiss"> {{ showForeignImage ? 'International' : 'Suisse' }}</v-btn>
           <div class="image-wrapper" style="position: relative;">

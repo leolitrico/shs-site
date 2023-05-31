@@ -1,7 +1,7 @@
 <template>
     <v-main>
       <v-col>
-        <h1 class="display-2 font-weight-bold text-center">Bibliography</h1>
+        <h1 class="display-2 font-weight-bold text-center">Bibliographie</h1>
         <v-card class="elevation-5">
             <v-list dense>
                 <v-list-item v-for="(entry, index) in bibliography" :key="index">
